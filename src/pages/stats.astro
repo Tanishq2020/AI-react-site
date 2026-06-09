@@ -1,0 +1,176 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout>
+  <div class="min-h-screen bg-gradient-to-br from-cream via-forest-light to-cream dark:from-forest-dark dark:via-forest-green/10 dark:to-forest-dark">
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-10 left-10 w-72 h-72 bg-emerald/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 right-10 w-96 h-96 bg-forest-green/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <!-- Page Header -->
+      <div class="mb-12">
+        <h1 class="text-4xl font-bold text-forest-dark dark:text-cream mb-2">Statistics</h1>
+        <p class="text-sage">Track your productivity metrics and growth over time</p>
+      </div>
+
+      <!-- Time Period Selector -->
+      <div class="flex gap-4 mb-12 flex-wrap">
+        <button class="px-4 py-2 rounded-lg bg-emerald text-cream font-semibold">Daily</button>
+        <button class="px-4 py-2 rounded-lg bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 text-forest-dark dark:text-cream hover:bg-emerald/10 transition">Weekly</button>
+        <button class="px-4 py-2 rounded-lg bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 text-forest-dark dark:text-cream hover:bg-emerald/10 transition">Monthly</button>
+        <button class="px-4 py-2 rounded-lg bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 text-forest-dark dark:text-cream hover:bg-emerald/10 transition">Yearly</button>
+      </div>
+
+      <!-- Charts Grid -->
+      <div class="grid lg:grid-cols-2 gap-6 mb-12">
+        <!-- Focus Hours Chart -->
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20">
+          <h3 class="text-xl font-bold text-forest-dark dark:text-cream mb-6">Focus Hours</h3>
+          <div class="h-64 flex items-end justify-around gap-2">
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-emerald/30 rounded-t-lg" style="height: 60%;"></div>
+              <span class="text-xs text-sage mt-2">Mon</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-emerald/40 rounded-t-lg" style="height: 75%;"></div>
+              <span class="text-xs text-sage mt-2">Tue</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-emerald rounded-t-lg" style="height: 100%;"></div>
+              <span class="text-xs text-sage mt-2">Wed</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-emerald/50 rounded-t-lg" style="height: 80%;"></div>
+              <span class="text-xs text-sage mt-2">Thu</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-emerald/30 rounded-t-lg" style="height: 65%;"></div>
+              <span class="text-xs text-sage mt-2">Fri</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-emerald/45 rounded-t-lg" style="height: 70%;"></div>
+              <span class="text-xs text-sage mt-2">Sat</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-emerald/25 rounded-t-lg" style="height: 50%;"></div>
+              <span class="text-xs text-sage mt-2">Sun</span>
+            </div>
+          </div>
+          <p class="text-center text-sm text-sage mt-6">Total: 18.5 hours this week</p>
+        </div>
+
+        <!-- Tasks Completed Chart -->
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20">
+          <h3 class="text-xl font-bold text-forest-dark dark:text-cream mb-6">Tasks Completed</h3>
+          <div class="h-64 flex items-end justify-around gap-2">
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-forest-green/30 rounded-t-lg" style="height: 70%;"></div>
+              <span class="text-xs text-sage mt-2">Mon</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-forest-green/40 rounded-t-lg" style="height: 85%;"></div>
+              <span class="text-xs text-sage mt-2">Tue</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-forest-green rounded-t-lg" style="height: 100%;"></div>
+              <span class="text-xs text-sage mt-2">Wed</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-forest-green/50 rounded-t-lg" style="height: 75%;"></div>
+              <span class="text-xs text-sage mt-2">Thu</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-forest-green/35 rounded-t-lg" style="height: 65%;"></div>
+              <span class="text-xs text-sage mt-2">Fri</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-forest-green/45 rounded-t-lg" style="height: 80%;"></div>
+              <span class="text-xs text-sage mt-2">Sat</span>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+              <div class="w-full bg-forest-green/25 rounded-t-lg" style="height: 45%;"></div>
+              <span class="text-xs text-sage mt-2">Sun</span>
+            </div>
+          </div>
+          <p class="text-center text-sm text-sage mt-6">Total: 42 tasks this week</p>
+        </div>
+      </div>
+
+      <!-- Key Metrics -->
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20">
+          <h3 class="text-lg font-bold text-forest-dark dark:text-cream mb-4">Streak</h3>
+          <div class="text-5xl font-bold text-amber-600 mb-2">7</div>
+          <p class="text-sage mb-4">Days in a row</p>
+          <p class="text-xs text-sage">Longest: 12 days (Jan 2025)</p>
+        </div>
+
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20">
+          <h3 class="text-lg font-bold text-forest-dark dark:text-cream mb-4">Average Focus</h3>
+          <div class="text-5xl font-bold text-emerald mb-2">2.6h</div>
+          <p class="text-sage mb-4">Per day</p>
+          <p class="text-xs text-sage">Goal: 3h per day</p>
+        </div>
+
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20">
+          <h3 class="text-lg font-bold text-forest-dark dark:text-cream mb-4">Completion Rate</h3>
+          <div class="text-5xl font-bold text-forest-green mb-2">86%</div>
+          <p class="text-sage mb-4">Tasks completed</p>
+          <p class="text-xs text-sage">This month</p>
+        </div>
+      </div>
+
+      <!-- Monthly Overview -->
+      <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20">
+        <h3 class="text-xl font-bold text-forest-dark dark:text-cream mb-6">Monthly Overview</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <p class="text-sage mb-4">This Month (January)</p>
+            <div class="space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="text-forest-dark dark:text-cream">Focus Sessions</span>
+                <span class="font-bold text-emerald">74</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-forest-dark dark:text-cream">Focus Hours</span>
+                <span class="font-bold text-emerald">61 hours</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-forest-dark dark:text-cream">Tasks Completed</span>
+                <span class="font-bold text-emerald">156</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-forest-dark dark:text-cream">Trees Grown</span>
+                <span class="font-bold text-emerald">8</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="text-sage mb-4">Last Month (December)</p>
+            <div class="space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="text-forest-dark dark:text-cream">Focus Sessions</span>
+                <span class="font-bold text-sage">62</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-forest-dark dark:text-cream">Focus Hours</span>
+                <span class="font-bold text-sage">51.5 hours</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-forest-dark dark:text-cream">Tasks Completed</span>
+                <span class="font-bold text-sage">128</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-forest-dark dark:text-cream">Trees Grown</span>
+                <span class="font-bold text-sage">6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>
