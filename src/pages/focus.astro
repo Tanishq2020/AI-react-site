@@ -1,0 +1,113 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout>
+  <div class="min-h-screen bg-gradient-to-br from-cream via-forest-light to-cream dark:from-forest-dark dark:via-forest-green/10 dark:to-forest-dark">
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-10 left-10 w-72 h-72 bg-emerald/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 right-10 w-96 h-96 bg-forest-green/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <!-- Page Header -->
+      <div class="mb-12">
+        <h1 class="text-4xl font-bold text-forest-dark dark:text-cream mb-2">Focus Timer</h1>
+        <p class="text-sage">Stay focused with Pomodoro technique sessions</p>
+      </div>
+
+      <!-- Timer Card -->
+      <div class="p-12 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 mb-12">
+        <div class="flex flex-col items-center justify-center">
+          <!-- Timer Display -->
+          <div class="relative w-64 h-64 mb-8">
+            <svg class="w-full h-full" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="95" fill="none" stroke="#e5e7eb" stroke-width="2"/>
+              <circle cx="100" cy="100" r="95" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="520" stroke-dashoffset="130" stroke-linecap="round" transform="rotate(-90 100 100)"/>
+            </svg>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+              <div class="text-7xl font-bold text-forest-dark dark:text-cream">25:00</div>
+              <div class="text-sm text-sage mt-2">Focus Time</div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="flex gap-6 mb-8">
+            <button class="p-4 rounded-full bg-gradient-to-br from-emerald to-forest-green text-cream hover:shadow-lg transition transform hover:scale-105">
+              ▶️
+            </button>
+            <button class="p-4 rounded-full bg-forest-green/20 text-forest-dark dark:text-cream hover:bg-forest-green/30 transition">
+              ⟲
+            </button>
+          </div>
+
+          <!-- Info -->
+          <div class="text-center">
+            <p class="text-sage mb-2">Today's Sessions</p>
+            <p class="text-2xl font-bold text-forest-dark dark:text-cream">4 / 8</p>
+            <p class="text-sm text-sage mt-2">2 hours 40 minutes focused</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sessions Summary -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20">
+          <h3 class="text-xl font-bold text-forest-dark dark:text-cream mb-6">Session History</h3>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between p-3 rounded-lg bg-emerald/10">
+              <span class="font-semibold text-forest-dark dark:text-cream">Morning Focus</span>
+              <span class="text-emerald">✓ 25m</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-emerald/10">
+              <span class="font-semibold text-forest-dark dark:text-cream">Work Block 1</span>
+              <span class="text-emerald">✓ 25m</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-emerald/10">
+              <span class="font-semibold text-forest-dark dark:text-cream">Work Block 2</span>
+              <span class="text-emerald">✓ 25m</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-emerald/10">
+              <span class="font-semibold text-forest-dark dark:text-cream">Afternoon Session</span>
+              <span class="text-emerald">✓ 25m</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20">
+          <h3 class="text-xl font-bold text-forest-dark dark:text-cream mb-6">Tips & Tricks</h3>
+          <div class="space-y-4">
+            <div class="p-3 rounded-lg bg-emerald/10">
+              <p class="font-semibold text-forest-dark dark:text-cream">🎯 Pro Tip</p>
+              <p class="text-sm text-sage mt-1">Disable notifications during focus sessions for better concentration.</p>
+            </div>
+            <div class="p-3 rounded-lg bg-emerald/10">
+              <p class="font-semibold text-forest-dark dark:text-cream">🌳 Growth Bonus</p>
+              <p class="text-sm text-sage mt-1">Complete 8 focus sessions today to unlock a bonus tree!</p>
+            </div>
+            <div class="p-3 rounded-lg bg-emerald/10">
+              <p class="font-semibold text-forest-dark dark:text-cream">⏰ Schedule</p>
+              <p class="text-sm text-sage mt-1">25 min focus + 5 min break = 1 session</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 text-center">
+          <p class="text-5xl font-bold text-emerald mb-2">18.5h</p>
+          <p class="text-sage">Total Focus Time</p>
+        </div>
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 text-center">
+          <p class="text-5xl font-bold text-forest-green mb-2">74</p>
+          <p class="text-sage">Sessions Completed</p>
+        </div>
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 text-center">
+          <p class="text-5xl font-bold text-amber-600 mb-2">7</p>
+          <p class="text-sage">Day Streak</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>
