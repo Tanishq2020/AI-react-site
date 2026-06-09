@@ -1,0 +1,20 @@
+---
+import { Navbar } from '../components/Navbar';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Study Forest - Grow Your Productivity</title>
+    <meta name="description" content="A nature-inspired productivity app where you grow a virtual forest through completing tasks and focus sessions." />
+    <meta name="theme-color" content="#2d5a3d" />
+  </head>
+  <body class="bg-cream dark:bg-forest-dark text-forest-dark dark:text-cream">
+    <Navbar client:load />
+    <main class="min-h-screen pt-16">
+      <slot />
+    </main>
+  </body>
+</html>
