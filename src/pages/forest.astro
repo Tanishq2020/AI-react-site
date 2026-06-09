@@ -1,0 +1,106 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout>
+  <div class="min-h-screen bg-gradient-to-br from-cream via-forest-light to-cream dark:from-forest-dark dark:via-forest-green/10 dark:to-forest-dark">
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-10 left-10 w-72 h-72 bg-emerald/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 right-10 w-96 h-96 bg-forest-green/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <!-- Page Header -->
+      <div class="mb-12">
+        <h1 class="text-4xl font-bold text-forest-dark dark:text-cream mb-2">Your Forest</h1>
+        <p class="text-sage">Watch your virtual ecosystem flourish with each achievement</p>
+      </div>
+
+      <!-- Forest Stats -->
+      <div class="grid md:grid-cols-4 gap-4 mb-12">
+        <div class="p-6 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 text-center">
+          <p class="text-4xl mb-2">🌲</p>
+          <p class="text-sm text-sage">Trees</p>
+          <p class="text-2xl font-bold text-forest-dark dark:text-cream">12</p>
+        </div>
+        <div class="p-6 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 text-center">
+          <p class="text-4xl mb-2">🌸</p>
+          <p class="text-sm text-sage">Flowers</p>
+          <p class="text-2xl font-bold text-forest-dark dark:text-cream">8</p>
+        </div>
+        <div class="p-6 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 text-center">
+          <p class="text-4xl mb-2">🦋</p>
+          <p class="text-sm text-sage">Animals</p>
+          <p class="text-2xl font-bold text-forest-dark dark:text-cream">5</p>
+        </div>
+        <div class="p-6 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 text-center">
+          <p class="text-4xl mb-2">⭐</p>
+          <p class="text-sm text-sage">Level</p>
+          <p class="text-2xl font-bold text-forest-dark dark:text-cream">5</p>
+        </div>
+      </div>
+
+      <!-- Main Forest Visualization -->
+      <div class="p-12 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20 mb-12">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-forest-dark dark:text-cream mb-8">Your Growing Ecosystem</h2>
+          <div class="inline-block text-8xl leading-none mb-8">
+            🌍🌲🌳🌴🌸🌺🦋🐝🦗🐛
+          </div>
+          <p class="text-sage">Forest Score: <span class="font-bold text-emerald">1,250 points</span></p>
+          <p class="text-sage mb-4">Progress to Level 6: <span class="font-bold text-forest-dark dark:text-cream">75%</span></p>
+          <div class="w-full bg-gray-300 rounded-full h-3 dark:bg-forest-green/20">
+            <div class="bg-emerald h-3 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forest Elements -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20">
+          <h3 class="text-xl font-bold text-forest-dark dark:text-cream mb-6">🌲 Trees</h3>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between p-3 rounded-lg bg-emerald/10">
+              <span class="font-semibold text-forest-dark dark:text-cream">Oak Tree</span>
+              <span class="text-emerald">✓</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-emerald/10">
+              <span class="font-semibold text-forest-dark dark:text-cream">Pine Tree</span>
+              <span class="text-emerald">✓</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-emerald/10">
+              <span class="font-semibold text-forest-dark dark:text-cream">Birch Tree</span>
+              <span class="text-emerald">✓</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg opacity-50">
+              <span class="font-semibold text-sage">Maple Tree</span>
+              <span class="text-sage">Locked</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 rounded-2xl backdrop-blur-sm bg-white/50 dark:bg-forest-dark/50 border-2 border-emerald/20">
+          <h3 class="text-xl font-bold text-forest-dark dark:text-cream mb-6">🏆 Achievements</h3>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between p-3 rounded-lg bg-emerald/10">
+              <span class="font-semibold text-forest-dark dark:text-cream">First Tree</span>
+              <span class="text-emerald">✓</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-emerald/10">
+              <span class="font-semibold text-forest-dark dark:text-cream">7-Day Streak</span>
+              <span class="text-emerald">✓</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-emerald/10">
+              <span class="font-semibold text-forest-dark dark:text-cream">10 Focus Sessions</span>
+              <span class="text-emerald">✓</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg opacity-50">
+              <span class="font-semibold text-sage">Forest Master</span>
+              <span class="text-sage">Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>
